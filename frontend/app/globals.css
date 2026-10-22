@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at 60% 40%, #213e68, #0b101b 80%);
+
+  color: #9DA6B3;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+}
+
+.contenedorim {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.contenedorim img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+.contenedorimfo{
+    width: 100%;
+  height: 150px;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  align-items: center;
+ 
+  overflow: hidden;
+}
+.contenedorimfo img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+main {
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.desplegable {
+  background-color: white;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 1.5em;
+  color: #2ec4b6;
+  font-family: "Roboto Mono", monospace;
+  margin: 0 200px 30px 200px;
+}
+
+.h3tarea {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  color: #2ec4b6;
+  font-family: "Roboto Mono", monospace;
+  margin: 20px 0 30px 0;
+}
+
+hr {
+  margin: 0 40px;
+  border: 3px solid white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  color: #2ec4b6;
+  font-family: "Roboto Mono", monospace;
+}
+
+#Loginform {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  font-size: 0.8em;
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  min-height: 400px;
+  padding: 20px;
+}
+
+#Loginform h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 3em;
+  color: #2ec4b6;
+  font-family: "Roboto Mono", monospace;
+}
+
+.divlo1,
+.divlo2 {
+  margin-bottom: 40px;
+}
+
+.divlo1 input,
+.divlo2 input {
+  border: 1px solid #182333;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  height: 30px;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.divlo1 p,
+.divlo2 p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5em;
+  color: #182333;
+  margin: 10px 0 20px 0;
+}
+
+.sub1 {
+  height: 40px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+    margin-top: 10px;
+
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 20px;
+  background-color: #182333;
+  border: none;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.sub1:hover {
+  color: white;
+  background-color: #2ec4b6;
+  transform: scale(1.05);
+}
+.volver{
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #182333;
+  border: none;
+  color: white;
+  font-size: 1.4em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.volver:hover {
+  background-color: #2ec4b6;
+  transform: scale(1.15);
+}
+.tarea-item {
+  margin: 5px 0;
+  padding: 8px;
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.tarea-item.completada .card .face.face1 .content h3 {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.tarea-item.completada .card:hover .face.face1 {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+.azul {
+  color: blue;
+}
+
+#divtareas {
+  border-radius: 30px;
+  text-align: center;
+}
+
+#listaTareas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.Ingresotarea {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 40px;
+  font-size: 0.8em;
+  font-family: "Roboto Mono", monospace;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  height: auto;
+}
+
+.nuevaTarea {
+  text-align: center;
+}
+
+#divrapidas {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.nuevaTareaInput {
+  width: 80%;
+  max-width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 20px;
+}
+
+
+
+.divinta {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.divinta label {
+  font-family: "Roboto Mono", monospace;
+}
+
+.divinta input {
+  text-align: center;
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.agregar {
+  text-decoration: none;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  background-color: #182333;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: "Roboto Mono", monospace;
+}
+
+#agregar:hover {
+  color: #182333;
+  background-color: white;
+  transform: scale(1.05);
+  font-family: "Roboto Mono", monospace;
+}
+
+.h2card{
+  opacity: 0.2;
+  font-size: 3em;
+  font-family: "Roboto Mono", monospace;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center; 
+}
+
+.container .card {
+    position: relative;
+    cursor: pointer;
+    width: 100%; 
+    max-width: 350px; 
+}
+
+.container .card .face {
+    width: 100%; 
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+  border-radius: 20px;
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(0); 
+    height: 300px;
+    
+}
+
+.container .card:hover .face.face1{
+    background: #2364F0;
+    transform: translateY(0); 
+}
+
+.container .card .face.face1 .content{
+    transition: 0.5s;
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 200px;
+    height: auto;
+}
+
+.container .card .face.face1 .content h3{
+    padding: 0;
+    color: #ffffff ;
+    text-align: center;
+    font-size: 1.3em; 
+    line-height: 1.3;
+    width: 100%; 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    max-height: 3em; 
+}
+
+.container .card .face.face2{
+   border-radius: 20px;
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 30px rgba(96, 146, 248, 0.8);
+    transform: translateY(-100px); 
+    min-height: 150px;
+    height: auto;
+    opacity: 0; 
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+    opacity: 1; 
+}
+
+.container .card .face.face2 .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    height: auto;
+}
+
+.container .card .face.face2 .content p{
+    margin: 0 0 15px 0; 
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.4;
+    min-height: 1.4em; 
+    max-height: 5.6em; 
+    flex: 1; 
+}
+
+
+
+.bcompletar, .beliminar {
+    white-space: nowrap; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    border: none ;
+    background: whitesmoke;
+    color: #333;
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 0.3s ease;
+   
+    
+    min-width: 120px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bcompletar:hover{
+  background-color: #51d340;
+ transform: scale(1.05);  
+
+} 
+.bpendiente:hover{
+  background-color: #eb5555;
+ transform: scale(1.05);  
+
+} 
+.btnEliminar{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.cerrar{
+  width:90%;
+  height: auto;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.3em;
+  background-color: #eb5555;
+  border-radius: 60px;
+  color: #fff;
+    transition: all 0.3s ease;
+  border: none;
+}
+.crearusu{
+    width: 90%;
+  height: auto;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.3em;
+  background-color: #5ace4b;
+  margin-bottom: 10px;
+  border-radius: 60px;
+    transition: all 0.3s ease;
+  color: #fff;
+  border: none;
+}
+
+.crearusu:hover{
+ background-color: #1bd403;
+ transform: scale(1.05); 
+}
+.cerrar:hover{
+ background-color: red;
+ transform: scale(1.05); 
+}
+.beliminar:hover {
+   background-color: #eb5555;
+ transform: scale(1.05);  
+
+
+}
+.fecha{
+  text-align: center;
+  font-size: 1em;
+}
+
+
+footer{
+  width: 100%;
+  background-color: #2ec4b6;
+  height: 150px;
+  margin-top: 40px;
+  
+  border-radius: 40px;
+}
+.divlog{
+  width: 100%;
+}
